@@ -2,6 +2,7 @@
 using Unity.Mathematics;
 using Unity.Transforms;
 
+[UpdateAfter(typeof(TransformSystemGroup))]
 public class FaceDirectionSystem : SystemBase
 {
     protected override void OnUpdate()
