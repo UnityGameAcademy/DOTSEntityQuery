@@ -1,4 +1,4 @@
-﻿ using Unity.Burst;
+﻿using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
@@ -6,9 +6,9 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using static Unity.Mathematics.math;
 
+[UpdateInGroup(typeof(SimulationSystemGroup))]
+[UpdateBefore(typeof(TargetToDirectionSystem))]
 
-
-[UpdateBefore(typeof(SimulationSystemGroup))]
 public class AssignPlayerToTargetSystem : SystemBase
 {
     protected override void OnStartRunning()
@@ -19,7 +19,7 @@ public class AssignPlayerToTargetSystem : SystemBase
 
     protected override void OnUpdate()
     {
-        //AssignPlayer();
+
     }
 
     private void AssignPlayer()

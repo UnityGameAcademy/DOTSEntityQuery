@@ -6,6 +6,7 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using static Unity.Mathematics.math;
 
+
 public class TargetToDirectionSystem : SystemBase
 {
     protected override void OnUpdate()
